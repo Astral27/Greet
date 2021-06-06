@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FUN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    function lovescore(){
+      var name=prompt("Enter your name:");
+var secondname=prompt("Enter your partner's name:");
+if( name!=null && secondname!=null)
+{
+  var n=Math.random()*100;
+n=Math.floor(n)+1;
+alert("Your lovescore with "+secondname+ " is: "+n+"%");
+}
+    }
+  </script>
+</head>
+<body>
+
+<h1 >Welcome!</h1>
+<h2 id="greeting"></h2>
+<button  onclick="myFunction()" class="btn">CLick Me</button>
+<script>
+  function myFunction()
+  {
+
+    var name = prompt("Please enter your name:");
+
+    if (name != null)
+    {
+ var firstname=name.slice(0,1);
+ firstname=firstname.toUpperCase();
+ var lastname=name.slice(1,name.length);
+ lastname=lastname.toLowerCase();
+
+      document.getElementById("greeting").innerHTML=
+      "Hello there, " + firstname + lastname + "! How are you Today?";
+    }
+  }
+
+</script>
+<form class="" action="mailto:ashu2748.kumar@gmail.com" method="post" enctype="text/plain">
+  <label>Your Name:</label>
+  <input type="text" name="Your name" value="" /><br /><br />
+  <label>Your Email:</label>
+  <input type="email" name="Your Email" value="" /><br /><br />
+  <label>Your Message</label><br />
+  <textarea name="name" row="10" col="30"></textarea><br /><br />
+  <a href="mailto:ashu2748.kumar@gmail.com">click me</a>
+
+</form>
+
+<br>
+<h3>For checking you Lovesscore please click below:</h3>
+<button type="button" name="button" onclick="lovescore()">Lovescore</button>
+
+</body>
+</html>
